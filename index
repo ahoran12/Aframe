@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple A-Frame House with Trees</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <!-- Custom Camera Starting Position -->
+      <a-camera position="1 2 4" rotation="0 0 -30">
+        <a-cursor></a-cursor>
+      </a-camera>
+      <!-- Enclosed Environment -->
+      <a-plane position="0 1.5 -7" color="#643200" scale="30 3 30"></a-plane>
+      <a-plane
+        position="7 1.5 0"
+        rotation="0 -90 0"
+        color="#643200"
+        scale="30 3 30"
+      ></a-plane>
+      <a-plane
+        position="0 1.5 8"
+        rotation="0 180 0"
+        color="#643200"
+        scale="30 3 30"
+      ></a-plane>
+      <a-plane
+        position="-7 1.5 0"
+        rotation="0 90 0"
+        color="#643200"
+        scale="30 3 30"
+      ></a-plane>
+
+      <!-- Amore's Input, lmk if you need anything adjusted. these are the backround and trees -->
+      <a-gltf-model
+        id="tree"
+        position="-4 4 -3"
+        rotation="0 100 0"
+        scale="-2 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-gltf-model
+        id="FrontTreeLeft-2"
+        position="-3.69 3.43 -0.3"
+        rotation="0 100 0"
+        scale="-2 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+        gltf-model="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-gltf-model
+        id="FrontTreeLeft"
+        position="-4 4 -3"
+        rotation="0 100 0"
+        scale="-2 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+        gltf-model="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-gltf-model
+        id="FrontTreeRight"
+        position="2 4 -3"
+        rotation="0 100 0"
+        scale="-2 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+        gltf-model="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-gltf-model
+        id="frontTree"
+        position="-2.05 4 -3.56"
+        rotation="0 100 0"
+        scale="4 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+        gltf-model="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-gltf-model
+        id="rightTreeBack"
+        position="1.03 4 -3.56"
+        rotation="0 100 0"
+        scale="4 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+        gltf-model="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-gltf-model
+        id="LeftTreeBack"
+        position="-5.65 4 -3.56"
+        rotation="0 100 0"
+        scale="-2 10 10"
+        src="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+        gltf-model="https://cdn.glitch.me/b294cc35-bed7-4484-9bce-1e75c660c17f/tree.glb?v=1695939795345"
+      ></a-gltf-model>
+      <a-plane
+        id="ground"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="15"
+        height="15"
+        src="https://cdn.glitch.global/b294cc35-bed7-4484-9bce-1e75c660c17f/Floor.png?v=1695942612041"
+      ></a-plane>
+      <!-- copy and paste house object here -->
+      <a-box
+        id="house_FIll in"
+        position="0.18 1 -2.22"
+        scale="2 2 2"
+        color="black"
+        material=""
+        geometry=""
+      ></a-box>
+      <a-box
+        id="house_FIll in-3"
+        position="0.24 -0.95 -0.81"
+        scale="2 2 2"
+        color="black"
+        material=""
+        geometry=""
+      ></a-box>
+      <a-box
+        id="house_FIll in-2"
+        position="-1.77 1 -2.22"
+        scale="2 2 2"
+        color="black"
+        material=""
+        geometry=""
+      ></a-box>
+      <a-pyramid>
+         id="houseroof"
+        position="-1.77 1 -2.22"
+        scale="2 2 2"
+        color="black"
+        material=""
+        geometry=""
+      </a-pyramid>
+      <a-sky
+        src="https://cdn.glitch.com/7e18fbf8-9686-4cf7-91f9-4a6bbdb54f5e%2Fsky.jpg?1544174075054"
+      ></a-sky>
+    </a-scene>
+  </body>
+</html>
